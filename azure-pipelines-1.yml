@@ -23,7 +23,7 @@ steps:
     action: 'Create Or Update Resource Group'
     resourceGroupName: 'Test_POC'
     location: 'Brazil US'
-    templateLocation: 'Linked artifact'
+    templateLocation: 'URL of the file'
     csmFile: 'https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2016-06-01/workflowdefinition.json'
     csmParametersFile: 'https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2016-06-01/workflowdefinition.json'
     #overrideParameters: '-dailyreports_name ''$(IACWeb)'' -dailyreportsapi_name ''$(IACAPI)'''
