@@ -25,4 +25,8 @@ steps:
     location: 'Brazil US'
     templateLocation: 'Linked artifact'
     csmFile: 'https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2016-06-01/workflowdefinition.json'
+    csmParametersFile: 'https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2016-06-01/workflowdefinition.json'
+    overrideParameters: '-dailyreports_name ''$(IACWeb)'' -dailyreportsapi_name ''$(IACAPI)'''
     deploymentMode: 'Incremental'
+    deploymentName: 'AzureLogicAPPD1'
+    deploymentOutputs: 'AzureLogicAPPD1'
