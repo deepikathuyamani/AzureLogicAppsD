@@ -1,18 +1,4 @@
 # Starter pipeline
-- task: AzureResourceManagerTemplateDeployment@3
-  inputs:
-    deploymentScope: 'Resource Group'
-    azureResourceManagerConnection: 'EIIM S4 Unit (225be0b6-6988-4b65-8268-8fec4d0ff5f2)'
-    subscriptionId: '225be0b6-6988-4b65-8268-8fec4d0ff5f2'
-    action: 'Create Or Update Resource Group'
-    resourceGroupName: 'Reference_POCs_RG'
-    location: 'Brazil US'
-    templateLocation: 'Linked artifact'
-    csmFile: 'https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2016-06-01/workflowdefinition.json'
-    deploymentMode: 'Incremental'
-# Start with a minimal pipeline that you can customize to build and deploy your code.
-# Add steps that build, run tests, deploy, and more:
-# https://aka.ms/yaml
 
 trigger:
 - main
@@ -28,3 +14,15 @@ steps:
     echo Add other tasks to build, test, and deploy your project.
     echo See https://aka.ms/yaml
   displayName: 'Run a multi-line script'
+
+- task: AzureResourceManagerTemplateDeployment@3
+  inputs:
+    deploymentScope: 'Resource Group'
+    azureResourceManagerConnection: 'EIIM S4 Unit (225be0b6-6988-4b65-8268-8fec4d0ff5f2)'
+    subscriptionId: '225be0b6-6988-4b65-8268-8fec4d0ff5f2'
+    action: 'Create Or Update Resource Group'
+    resourceGroupName: 'Reference_POCs_RG'
+    location: 'Brazil US'
+    templateLocation: 'Linked artifact'
+    csmFile: 'https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2016-06-01/workflowdefinition.json'
+    deploymentMode: 'Incremental'
