@@ -4,8 +4,7 @@
     "parameters": {
         "workflows_HTTPRequestPOC_name": {
             "defaultValue": "HTTPRequestPOC",
-            "type": "String"
-        },
+            "type": "String"},
         "connections_office365_externalid": {
             "defaultValue": "/subscriptions/225be0b6-6988-4b65-8268-8fec4d0ff5f2/resourceGroups/Test_POC/providers/Microsoft.Web/connections/office365",
             "type": "String"
